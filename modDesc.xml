@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>MEMDOR</author>
+
+    <version>1.1.0.0</version>
+
+    <title>
+        <en>Kroeger PWO 24 Auto-Load.</en>
+        <de>Kroeger PWO 24 Auto-Lader.</de>
+        <fr>Kroeger PWO 24 Chargement Automatique.</fr>
+        <it>Kroeger PWO 24 Caricatore Automatico.</it>
+    </title>
+
+    <description>
+        <en> <![CDATA[
+For the function of pallet autoloader Achimobil "Pallet Autoloader Specialization" is required.
+
+Kroeger PWO 44 trailer with pallet autoloader function facilitates your work with productions and numerous pallets. 
+
+Up to 44 Euro pallets can be transported with one tour. 
+
+Euro pallets, liquid tanks, BigBag pallets, cotton round bales and oversized Euro pallets can be loaded by the pallet autoloader specialization.
+
+With the choice of colors you can customize the Kroeger PWO 24 according to your wishes.
+
+Price: 21500 €
+
+Changelog V 1.1.0.0
+- Tested with TestRunner_public (GIANTS). (No errors)
+- descVersion 63
+- Description adjusted
+- Changelog inserted
+- Autoload trigger adjusted.
+- Edited several collisions
+- Own weight increased
+- Dependencies of "Pallet Autoloader Specialization" added
+            ]]>
+        </en>
+		
+        <de> <![CDATA[
+Für die Funktion des Paletten-Autoloader wird die „Paletten Autoloader Spezialisierung“ von Achimobil benötigt.
+
+Kroeger PWO 44 Anhänger mit Paletten-Autoloader Funktion erleichter Ihnen die Arbeit mit den Produktionen und den zahlreichen Paletten. 
+
+Bis zu 44 Euro-Paletten können mit einer Tour transportiert werden. 
+
+Euro-Paletten,  Flüssigkeitstanks, BigBag Paletten, Baumwolle Rundballen und übergroße Euro-Paletten können von der Paletten Autoloader Spezialisierung geladen werden.
+
+Mit der Farbwahl gestalten Sie den Kroeger PWO 24 nach ihren Wünsche.
+
+Preis: 21500 €
+
+Changelog V 1.1.0.0
+- Getestet mit TestRunner_public (GIANTS). (Keine Fehler)
+- descVersion 63
+- Beschreibung angepasst
+- Changelog eingefügt
+- Autoload Trigger angepasst.
+- Diverse Collisionen bearbeitet
+- Eigengewicht erhöht
+- Abhängigkeiten von "Paletten Autoloader Spezialisierung" eingefügt
+            ]]>
+        </de>
+		
+        <fr> <![CDATA[
+La fonction d'autochargeur de palettes nécessite la "spécialisation autochargeur de palettes" d'Achimobil.
+
+La remorque Kroeger PWO 44 avec fonction autochargeuse de palettes vous facilite le travail avec les productions et les nombreuses palettes. 
+
+Jusqu'à 44 euro-palettes peuvent être transportées en une seule tournée. 
+
+Les palettes Euro, les citernes de liquide, les palettes BigBag, les balles rondes de coton et les palettes Euro surdimensionnées peuvent être chargées par la spécialisation Autoloader de palettes.
+
+Le choix des couleurs vous permet de personnaliser la PWO 24 de Kroeger.
+
+Prix : 21500 €.
+
+Changelog V 1.1.0.0
+- Testé avec TestRunner_public (GIANTS). (Aucune erreur)
+- descVersion 63
+- Description adaptée
+- Changelog inséré
+- Adaptation des déclencheurs d'autoload.
+- Diverses collisions traitées
+- Augmentation du poids propre
+- Insertion des dépendances de la "Spécialisation de l'autochargeur de palettes".
+            ]]>
+        </fr>
+		
+        <it> <![CDATA[
+La "Specializzazione Pallet Autoloader" di Achimobil è necessaria per la funzione Pallet Autoloader.
+
+Il rimorchio Kroeger PWO 44 con funzione di caricatore automatico di pallet facilita il vostro lavoro con produzioni e numerosi pallet. 
+
+Fino a 44 europallet possono essere trasportati in un solo viaggio. 
+
+Gli europallet, i serbatoi di liquidi, i pallet BigBag, le balle rotonde di cotone e gli europallet sovradimensionati possono essere caricati dalla specializzazione del caricatore automatico di pallet.
+
+Con la selezione dei colori potete progettare il Kroeger PWO 24 secondo i vostri desideri.
+
+Prezzo: 21500 €
+
+Changelog V 1.1.0.0
+- Testato con TestRunner_public (GIANTS). (Nessun errore)
+- descVersion 63
+- Descrizione adattata
+- Changelog inserito
+- Trigger autoload adattato.
+- Varie collisioni modificate
+- Il proprio peso è aumentato
+- Aggiunte le dipendenze di "Specializzazione Autoloader per pallet".
+            ]]>
+        </it>
+    </description>
+
+    <iconFilename>icon_pwo24_AL.png</iconFilename>
+
+    <multiplayer supported="true"/>
+
+    <storeItems>
+        <storeItem xmlFilename="pwo24_AL.xml"/>
+    </storeItems>
+
+    <dependencies>
+        <dependency>FS22_aPalletAutoLoader</dependency>
+    </dependencies>
+
+    <brands>
+        <brand name="MEMDOR" title="MEMDOR" image="brand.icon.dds"/>
+    </brands>
+
+    <vehicleTypes>
+        <type name="PalletAutoLoaderTrailerPWO24" parent="trailer" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/>
+        </type>
+    </vehicleTypes>
+
+    <l10n>
+		<text name="function_PalletAutoload_Trailer">
+            <en>Trailer with autoload for different pallets.</en>
+            <de>Anhänger mit Autoload für verschiedene Paletten.</de>
+            <fr>Remorque avec autoload pour différentes palettes.</fr>
+            <it>Rimorchio con autocarico per vari pallet.</it>
+        </text>
+		<text name="type_PalletAutoload_Trailer">
+            <en>Pallet Autoload</en>
+            <de>Paletten Autoloader</de>
+            <fr>Autochargeur de palettes</fr>
+            <it>Caricatore automatico di pallet</it>
+        </text>
+		<text name="unit_PalletAutoload">
+            <en>Pallets</en>
+            <de>Paletten</de>
+            <fr>Palettes</fr>
+            <it>Pallets</it>
+        </text>
+		<text name="configuration_aPalletAutoloader_PWO">
+            <en>Maximum payload</en>
+            <de>Maximale Zuladdung</de>
+            <fr>Charge maximale</fr>
+            <it>Carico utile massimo</it>
+        </text>
+		<text name="configuration_Pallet_Payload_1">
+            <en>22 Euro pallets</en>
+            <de>22 Euro-Paletten</de>
+            <fr>22 palettes Euro</fr>
+            <it>22 Euro pallet</it>
+        </text>
+		<text name="configuration_Pallet_Payload_2">
+            <en>36 Euro pallets</en>
+            <de>36 Euro-Paletten</de>
+            <fr>36 palettes Euro</fr>
+            <it>36 Euro pallet</it>
+        </text>
+		<text name="configuration_PWO_24_Autoload">
+            <en>Autoloader</en>
+            <de>Autolader</de>
+            <fr>Chargeur de voiture</fr>
+            <it>Caricatore automatico</it>
+        </text>
+		<text name="configuration_PWO_24_Autoload2">
+            <en>Autoloader with grid</en>
+            <de>Autolader mit Gitter</de>
+            <fr>Chargeur de voiture avec grille</fr>
+            <it>Caricabatterie per auto con griglia</it>
+        </text>
+    </l10n>
+
+</modDesc>
